@@ -1,0 +1,471 @@
+@font-face {
+  font-family: poppins;
+  src: url(/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+html, body {
+  font-family: "poppins", sans-serif;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+.main a.active{
+  color: #ff6b35!important;
+}
+
+/* header */
+
+.main .header {
+  color: #fff;
+}
+
+.main .header .image{
+  position: relative;
+  width: 100vw;  
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+
+.main .header .image .deskImage{
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+}
+
+.main .header .image .text{
+  z-index: 1;
+  /* color: #ff6b35; */
+  color: #fff;
+  transition: all 1s ease;
+  position: relative;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center; 
+}
+
+.main .header .image .text h1{
+   font-size: 3.2rem;
+}
+
+.main .header .image .imageCover{
+  z-index: 1 ;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  background-color: #1c6e8dcc;
+}
+
+/* headermenu */
+
+.main .menu {
+  color: #1c6e8c;
+  font-size: 1.2rem;
+  margin: 0px 10%;
+  min-height: 20vh;
+  padding: 2rem;
+}
+
+.main .menu .container  {
+  min-height: 20vh;
+}
+
+.main .menu .row{
+  min-height: 20vh;
+  /* height: 100%; */
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main .menu .row * {
+  text-align: center;
+}
+
+.main .menu a{
+  color: #1c6e8c;
+  text-decoration: none;
+  margin: .5rem;
+  transition: all .3s ease;
+}
+
+.main .menu a:hover{
+  color: #ff6b35;
+}
+
+/* footer */
+
+.main .footer {
+  background-color: #1c6e8c;
+  min-height: 10vh;
+  font-size: 1.2rem;
+}
+
+.main .footer .container {
+  min-height: 10vh;
+}
+
+.main .footer .row {
+  min-height: 10vh;
+  align-items: center;
+}
+
+.main .footer .row .footerMenu{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.main .footer .row .footerMenu a{
+  padding: 0rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  transition: all .3s ease;
+  /* text-align: center; */
+}
+
+.main .footer .row .footerMenu a:hover{
+  color: #ff6b35;
+}
+
+.main .footer .row .footerMenu a:first-of-type{
+  padding-left: 1rem;
+}
+
+.main .footer .row .rab{
+  background-color: #1c6e8c;
+  text-align: start;
+  margin-bottom: 1rem;
+}
+
+.main .footer .row .rab span {
+  padding-left: 1rem;
+  transition: all .3s ease;
+  color: #ff6b35;
+}
+
+.main .footer .row .rab span:hover {
+  color: #ffffff;
+}
+
+/* home */
+
+.main .home .contentBlock {
+  position: relative;
+  height: 100vh;
+  background-image: url(/img/car.jpg);
+  background-position: 60% center;
+}
+
+.main .home .contentBlock .carImage {
+  height: 100%;
+  display: none;
+  object-fit: fill;
+  object-position: 100% 60%;
+}
+
+.main .home .contentBlock .imageCover{
+  z-index: 1 ;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  background-color: #1c6e8d66;
+}
+
+.main .home .contentBlock .wrapper {
+  color: #fff;
+  font-size: 1.8rem; 
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.main .home .contentBlock .container {
+  height: 100%;
+}
+
+.main .home .contentBlock .container .row{
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main .home .contentBlock .wrapper .buttonHolder {
+  margin-bottom: 4rem;
+}
+
+.main .home .contentBlock .wrapper .button {
+  font-size: 1rem;
+  background-color: #ff6b35;
+  text-decoration: none;
+  position: absolute;
+  border-radius: 50px;
+}
+
+.main .home .contentBlock .wrapper .button p {
+  color: #fff;
+  margin: 0px;
+  padding: 1rem 2rem;
+  transition: all .3s ease;
+}
+
+.main .home .contentBlock .wrapper .button p:hover {
+  color: #1c6e8c;
+  /* font-size: 1.2rem; */
+}
+
+.main .home .textBlock .text,
+.main .about .textBlock .text {
+  margin: 4rem auto;
+  font-size: 1.2rem;
+}
+
+/* about */
+
+.main .about .contentBlock{
+  position: relative;
+  min-height: fit-content;
+  background-color: #e2e2e2;
+}
+
+.main .about .contentBlock .wrapper{
+  height: 100%;
+}
+
+.main .about .contentBlock .wrapper .text{
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+}
+
+.main .about .contentBlock .wrapper .imageHolder{
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+}
+
+.main .about .contentBlock .wrapper .imageHolder .profileImage{
+  max-width: 50%;
+}
+
+.main .about .contentBlock .container {
+  height: 100%;
+}
+
+.main .about .contentBlock .container .row{
+  height: 100%;
+  align-items: center;
+}
+
+.main .about .contentBlock .container .text{
+  color: #1c6e8c;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.main .about .contentBlock .container img{
+  width: 100%;
+  border-radius: 15px;
+}
+
+.main .about .blockLinks .links {
+  justify-content: space-evenly;
+  gap: 2rem 9rem;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+.main .about .blockLinks .links a{
+  text-decoration: none;
+}
+
+.main .about .blockLinks .links .block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  transition: all .3s ease;
+  aspect-ratio: 1 / 1;
+  background-color: #e2e2e2;
+  color: #1c6e8c;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.main .about .blockLinks .links .block:hover {
+  font-size: 2rem;  
+}
+
+/* portfolio */
+
+.main .portfolio .contentBlock {
+  background-color: #e2e2e2;
+  color: #1c6e8c;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.main .portfolio .contentBlock .text{
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  font-size: 1.2rem;
+}
+  
+.main .portfolio .contentBlock .buttonRow{
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+
+.main .portfolio .contentBlock .buttonHolder{
+  width: min-content;
+  display: flex;
+  align-items: center;
+}
+
+.main .portfolio .contentBlock .button{
+  text-decoration: none;
+}
+
+.main .portfolio .button p {
+  font-size: 1rem;
+  color: #fff;
+  border: 2px solid #e2e2e2;
+  background-color: #ff6b35;
+  padding: 1rem 2rem;
+  border-radius: 500px;
+  transition: all .3s ease;
+}
+
+.main .portfolio .button p:hover {
+  color: #1c6e8c;
+}
+
+
+/* contact */
+
+.main .contact .contentBlock .text {
+  font-size: 1.2rem;
+}
+
+.main .contact .blockLinks {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #e2e2e2;
+}
+
+.main .contact .blockLinks .links {
+  justify-content: space-evenly;
+  gap: 2rem 9rem;
+  flex-wrap: wrap;
+}
+
+.main .contact .blockLinks .links a{
+  text-decoration: none;
+}
+
+.main .contact .blockLinks .links .block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  transition: all .3s ease;
+  background-color: #ffffff;
+  aspect-ratio: 1 / 1;
+  color: #1c6e8c;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.main .contact .blockLinks .links .block:hover {
+  font-size: 2rem;
+}
+
+.main .contact .contentBlock {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  color: #1c6e8c;
+}
+
+.main .contact .contentBlock .buttonHolder {
+  margin-top: 2rem;
+}
+
+.main .contact .contentBlock .buttonHolder .button{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+  
+.main .contact .contentBlock .buttonHolder .button p {
+  background-color: #ff6b35;
+  padding: 1rem 2rem;
+  border-radius: 500px;
+  width: max-content;
+  color: #ffffff;
+  transition: all .3s ease;
+}
+
+.main .contact .contentBlock .buttonHolder .button p:hover {
+  color: #1c6e8c;
+}
+
+/* responsive */
+
+
+@media screen and (min-width: 576px) {
+  .main .menu .row{
+    flex-direction: row;
+  }  
+  .main .footer .row .footerMenu{
+    flex-direction: row;
+  }
+  .main .footer .row .rab{
+    text-align: center;
+  }
+  html, body {
+    font-size: 16px;
+  }
+  
+} 
+
+@media screen and (min-width: 992px) {
+  .main .menu {
+    padding: 0rem;
+  }
+  .main .footer .row .footerMenu{
+    display: block;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+  .main .footer .row .footerMenu a:first-of-type{
+    padding-left: 0rem;
+  }
+  .main .footer .row .rab{
+    text-align: end;
+    margin-bottom: 0rem;
+  }
+  .main .footer .row .rab span {
+    padding-left: 0rem;
+  }
+
+  .main .about .blockLinks .links,
+  .main .contact .blockLinks .links{
+    gap: 0rem;
+    flex-wrap: nowrap;
+  }
+
+  .main .about .contentBlock .wrapper .text{
+    padding-bottom: 4rem;
+  }  
+  .main .about .contentBlock .wrapper .imageHolder{
+    padding-top: 4rem;
+  }
+} 
