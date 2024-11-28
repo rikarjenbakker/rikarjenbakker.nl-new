@@ -1,0 +1,522 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+
+html {
+  background-color: rgb(1, 60, 99);
+  padding: 0px;
+  overflow: auto;
+  font-family: "Signika Negative";
+}
+
+body {
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  overflow-x: hidden;
+  scroll-snap-type: y proximity;
+  scroll-padding-top: 13%;
+}
+
+.loflow-logo {
+  background-color: #0274bf;
+  width: 100vw;
+  height: 13%;
+  text-align: center;
+  font-size: 7rem; 
+  vertical-align: middle;
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  /* border-bottom: solid #000000 5px; */
+}
+
+.loflow-logo div {
+  margin: auto;
+}
+
+.loflow-team {
+  width: 100%;
+  height: 87%;
+  background-color: #013c63;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  scroll-snap-align: start;
+}
+
+.loflow-team__title {
+  width: 30%;
+  order: 0;
+  text-align: center;
+  padding: 15rem 5rem 0rem 5rem;
+  font-size: 3.5rem;
+}
+
+.loflow-team__title img { 
+  border-radius: 5px;
+  border: solid #ffffff 0.3rem;
+  z-index: 1;
+}
+
+.loflow-team__text {
+  order: 1;
+  width: 70%;
+  height: 100%;
+  padding: 10rem 2rem 0rem 10rem;
+  line-height: 2.5rem;
+  vertical-align: middle;
+  scroll-snap-align: start;
+}
+
+.loflow-team__text__header {
+  font-size: 3.5rem;
+}
+
+.loflow-team__text__info {
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.loflow-team__text__info-name {
+  font-size: 2rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.loflow-team__text__info-text {
+   padding: 0rem 4rem;
+   font-size: 1.5rem;
+}
+
+.loflow-project {
+  background-color: #ffffff;
+  width: 100%;
+  height: 87%;
+  scroll-snap-align: start;
+}
+
+.loflow-project__header {
+  width: 100%;
+  color: #000000;
+  height: auto;
+  font-size: 3.5rem;
+  padding: 3rem 5rem;
+}
+
+.loflow-project__title {
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 0rem 0rem 1rem 5rem;
+}
+
+.loflow-project__text {
+  width: 100%;
+  height: auto;
+  padding: 3rem 4rem 3rem 8rem;
+  font-size: 1.5rem;
+}
+
+.loflow-project__text a {
+  color: #0274bf;
+  text-decoration: none;
+}
+
+.loflow-project__text a:hover{
+  color: #013c63;
+  text-decoration: underline;
+}
+
+.loflow-contact {
+  width: 100%;
+  height: 88%;
+  background-color: #013c63;
+  scroll-snap-align: start;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.loflow-contact__div {
+  width: 40%;
+}
+
+.loflow-contact__title {
+  width: 40%;
+  color: #ffffff;
+  height: auto;
+  font-size: 3.5rem;
+  padding: 3rem 5rem;
+}
+
+.loflow-contact__email {
+  width: 100%;
+  height: auto;
+  padding: 3rem 4rem 3rem 8rem;
+  font-size: 2rem;
+}
+
+.loflow-contact__email a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.loflow-contact__email a:hover {
+  color: #0274bf;
+  text-decoration: underline;
+}
+
+.loflow-contact__img {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+}
+
+.loflow-contact__img1 {
+  width: 45%;
+  order: 1;
+  margin: 10rem 0rem 0rem 4rem;
+}
+
+.loflow-contact__img1 img {
+  width: 100%;
+  border: solid #ffffff 0.3rem;
+  border-radius: 5px;
+}
+
+.loflow-contact__img2 {
+  width: 30%;
+  margin: 30rem 0rem 0rem 0rem;
+}
+
+.loflow-contact__img2 img {
+  width: 100%;
+  border: solid #ffffff 0.3rem;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 250px) {
+  html {
+    font-size: 7px;
+  }
+
+  .loflow-team__title {
+    width: 100%;
+    height: 25%;
+    padding: 1rem 1rem 2rem 1rem;
+    font-size: 3.5rem;
+    overflow: hidden;
+  }
+
+  .loflow-team__title img {
+    align-self: flex-end;
+    width: 40%;
+  }
+  
+  .loflow-team__text {
+    width: 100%;
+    height: 80%;
+    padding: 0rem 2rem 2rem 2rem;
+  } 
+  
+  .loflow-contact__div {
+    width: 100%;
+  }
+
+  .loflow-contact__img {
+    width: 100%;
+    height: 75%;
+  }
+  
+  .loflow-contact__img1 {
+    width: 35%;
+    margin: 7rem 0rem 0rem 4rem;
+  }
+
+  .loflow-contact__img2 {
+    width: 30%;
+    margin: 15rem 2rem 0rem 15rem;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  html {
+    font-size: 9px;
+  }
+
+  .loflow-team__title {
+    width: 100%;
+    height: 25%;
+    padding: 1rem 1rem 2rem 1rem;
+    font-size: 3.5rem;
+    overflow: hidden;
+  }
+
+  .loflow-team__title img {
+    align-self: flex-end;
+    width: 40%;
+  }
+  
+  .loflow-team__text {
+    width: 100%;
+    height: 80%;
+    padding: 0rem 2rem 2rem 2rem;
+  } 
+  
+  .loflow-contact__div {
+    width: 100%;
+  }
+
+  .loflow-contact__img {
+    width: 100%;
+    height: 75%;
+  }
+  
+  .loflow-contact__img1 {
+    width: 35%;
+    margin: 7rem 0rem 0rem 4rem;
+  }
+
+  .loflow-contact__img2 {
+    width: 30%;
+    margin: 15rem 2rem 0rem 15rem;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  html {
+    font-size: 10px;
+  }
+
+  .loflow-team__title {
+    width: 100%;
+    height: 25%;
+    padding: 1rem 1rem 2rem 1rem;
+    font-size: 3.5rem;
+    overflow: hidden;
+  }
+
+  .loflow-team__title img {
+    align-self: flex-end;
+    width: 40%;
+  }
+  
+  .loflow-team__text {
+    width: 100%;
+    height: 80%;
+    padding: 0rem 2rem 2rem 2rem;
+  } 
+  
+  .loflow-contact__div {
+    width: 100%;
+  }
+
+  .loflow-contact__img {
+    width: 100%;
+    height: 75%;
+  }
+  
+  .loflow-contact__img1 {
+    width: 35%;
+    margin: 7rem 0rem 0rem 4rem;
+  }
+
+  .loflow-contact__img2 {
+    width: 30%;
+    margin: 15rem 2rem 0rem 15rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 11px;
+  }
+
+  .loflow-team__title {
+    width: 100%;
+    height: 40%;
+    padding: 1rem 1rem 2rem 1rem;
+    font-size: 3.5rem;
+  }
+
+  .loflow-team__title img {
+    align-self: flex-end;
+    width: 40%;
+  }
+  
+  .loflow-team__text {
+    width: 100%;
+    height: 60%;
+    padding: 0rem 2rem 2rem 2rem;
+  } 
+  
+  .loflow-contact__div {
+    width: 100%;
+  }
+
+  .loflow-contact__img {
+    width: 100%;
+    height: 75%;
+  }
+  
+  .loflow-contact__img1 {
+    width: 35%;
+    margin: 5rem 0rem 0rem 3rem;
+  }
+
+  .loflow-contact__img2 {
+    width: 30%;
+    margin: 12rem 2rem 0rem 12rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+
+  .loflow-team__title {
+    width: 100%;
+    height: 40%;
+    padding: 1rem 1rem 2rem 1rem;
+    font-size: 3.5rem;
+  }
+
+  .loflow-team__title img {
+    align-self: flex-end;
+    width: 30%;
+  }
+  
+  .loflow-team__text {
+    width: 100%;
+    height: 60%;
+    padding: 0rem 2rem 2rem 2rem;
+  } 
+  
+  .loflow-contact__div {
+    width: 100%;
+  }
+
+  .loflow-contact__img {
+    width: 100%;
+    height: 75%;
+  }
+  
+  .loflow-contact__img1 {
+    width: 35%;
+    margin: 7rem 0rem 0rem 4rem;
+  }
+
+  .loflow-contact__img2 {
+    width: 30%;
+    margin: 15rem 2rem 0rem 15rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+
+  .loflow-team__title {
+    width: 100%;
+    height: 40%;
+    padding: 1rem 1rem 2rem 1rem;
+    font-size: 3.5rem;
+  }
+
+  .loflow-team__title img {
+    align-self: flex-end;
+    width: 25%;
+  }
+  
+  .loflow-team__text {
+    width: 100%;
+    height: 60%;
+    padding: 0rem 2rem 2rem 2rem;
+  } 
+  
+  .loflow-contact__div {
+    width: 100%;
+  }
+
+  .loflow-contact__img {
+    width: 100%;
+    height: 75%;
+  }
+  
+  .loflow-contact__img1 {
+    width: 35%;
+    margin: 7rem 0rem 0rem 4rem;
+  }
+
+  .loflow-contact__img2 {
+    width: 30%;
+    margin: 15rem 2rem 0rem 15rem;
+  }
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+  
+  .loflow-team__title {
+    width: 30%;
+    height: 100%;
+    padding: 15rem 5rem 0rem 5rem;
+    font-size: 3.5rem;
+  }
+
+  .loflow-team__title img{
+    width: 100%;
+  }
+  
+  .loflow-team__text {
+    width: 70%;
+    height: 100%;
+    padding: 10rem 2rem 0rem 10rem;
+  } 
+  
+  .loflow-contact__div {
+    width: 40%;
+  }
+  
+  .loflow-contact__title {
+    width: 40%;
+    height: auto;
+    padding: 3rem 5rem;
+  }
+
+  .loflow-contact__img {
+    width: 60%;
+  }
+  
+  .loflow-contact__img1 {
+    width: 50%;
+    margin: 10rem 0rem 0rem 3rem;
+  }
+  
+  .loflow-contact__img1 img {
+    width: 100%;
+  }
+  
+  .loflow-contact__img2 {
+    width: 40%;
+    margin: 30rem 0rem 0rem 0rem;
+  }
+  
+  .loflow-contact__img2 img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  html {
+    font-size: 18px;
+  }
+}

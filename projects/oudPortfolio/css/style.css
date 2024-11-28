@@ -1,0 +1,603 @@
+  *, *::before, *::after {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family: Lato;
+    src: url(../font/Lato-Regular.ttf);
+    font-weight: normal;
+  }
+
+  html, body {
+    font-size: 16px;
+    font-family: Lato;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ff8c42;
+    scroll-snap-type: y proximity; 
+    scroll-snap-align: start;
+  }
+
+  html::-webkit-scrollbar {
+      display: none;
+  }
+
+  html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .home-div {
+    width: 100vw;
+    height: 100vh; 
+    scroll-snap-align: start;
+  }
+
+  .home {
+    width: 100vw;
+    height: 72vh;
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+
+  .background-img-home {
+    opacity: 0.07;
+    width: 100vw;
+    height: 72vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .home-name-div {
+    width: 42%;
+    height: max-content;
+    margin: 4% 6.5%;
+    z-index: 2;
+    position: relative;
+  }
+
+  .home-name {
+    width: 135%;
+    text-align: center;
+    font-size: 8.4rem;
+    color: #ffffff;
+    background-color: #5b7c99;
+    border: solid 0.5rem #ffffff;
+    border-radius: 0.5rem;
+    position: relative;
+  }
+
+  .home-img {
+    border-radius: 0.5rem;
+    padding: 5% 0% 0% 0%;
+    width: 45%;
+    height: 10%;
+    position: relative;
+  }
+
+  .home-img img {
+    border: solid 1rem #cfe8ef;
+    border-radius: 0.5rem;
+    margin: 0rem;
+    padding: 0rem;
+    width: 65%;
+    position: relative;
+  }
+
+  .home-info {
+    width: 55%;
+    height: 25%;
+    position: relative;
+    margin: 0rem 6.5%;
+  }
+
+  .home-info-subtext {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .home-info-subtext-text {
+    font-size: 2rem;
+    padding: 0rem 3rem 0rem 0rem;
+    position: relative;
+  }
+
+  .home-info-maintext {
+    font-size: 5rem;
+    position: relative;
+  }
+
+  .home-menu {
+    height: 28vh;
+    background-color: #5b7c99;
+    padding: 5% 0rem 0rem 6.5%;
+  }
+
+  .home-menu-div {
+    width: 45%;
+    height: 35%;
+    background-color: #cfe8ef;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .home-menu-div a {
+    text-decoration: none;
+    color: #000000;
+    display: flex;
+  }
+
+  .home-menu-div a p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .home-menu-div p {
+    width: 100%;  
+    height: min-content;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .home-menu-item {
+    padding: 1rem;
+    font-size: 2.25rem;
+    justify-self: center;
+    position: relative;
+    text-align: center;
+    justify-content: space-evenly;
+    display: flex;
+    top: 50%;
+    transform: translateY(-50%);
+    height: min-content;
+  }
+
+  .home-menu-item-img {
+    padding: 1rem 1rem 1rem 0rem;
+    width: 4rem;
+    align-self: center;
+  }
+
+  .home-menu-spacer {
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .home-menu-spacer p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .AboutMe {
+    height: 100vh;
+    width: 100vw;
+    background-color: #cfe8ef;
+    scroll-snap-align: start;
+  }
+
+  .background-img-AboutMe {
+    opacity: 0.07;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+  }
+
+  .AboutMe-title-div {
+    position: relative;
+    width: 100vw;
+    height: 17vh;
+    padding: 6rem 0rem 0rem 12rem;
+  }
+
+  .AboutMe-title {
+    color: #ffffff;
+    padding: 0rem;
+    background-color: #5b7c99;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 4rem;
+    width: 25%;
+    height: 100%;
+    display: flex;
+  }
+
+  .AboutMe-title p {
+    width: 100%;  
+    height: min-content;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .AboutMe-title-img {
+    width: 4rem;
+    /* margin-left: -5rem; */
+    align-self: center;
+  }
+
+  .AboutMe-div {
+    display: flex;
+    height: 83vh;
+    width: 100vw;
+  }
+
+  .AboutMe-bio {
+    position: relative;
+    width: 45%;
+    height: max-content;
+    background-color: #ff8c42;
+    border-radius: 0.5rem;
+    font-size: 2.5rem;
+    color: #000000;
+    text-align: left;
+    order: 2;
+    top: 15%; 
+    left: 5%;
+    padding: 3rem 1.5rem;
+  }
+
+  .AboutMe-loves {
+    position: relative;
+    top: 42.5%;
+    left: 2.5%;
+    width: 17.5%;
+    height: max-content;
+    background-color: #ff8c42;
+    color: #000000;
+    border-radius: 0.5rem;
+    text-align: left;
+    font-size: 2rem;
+    padding: 1.5rem 3rem;
+  }
+
+  .AboutMe-haves {
+    position: relative;
+    top: 60%;
+    left: 1%;
+    width: 20%;
+    height: max-content;
+    background-color: #5b7c99;
+    color: #ffffff;
+    border-radius: 0.5rem;
+    text-align: left;
+    font-size: 2rem;
+    z-index: 2;
+    padding: 1.5rem 3rem;
+  }
+
+  .MyWork {
+    width: 100vw;
+    height: 100vh;
+    background-color: #5b7c99;
+    scroll-snap-align: start;
+  }
+
+  .background-img-MyWork {
+    opacity: 0.07;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+  }
+
+  .MyWork-title-div {
+    position: relative;
+    width: 100vw;
+    height: 17vh;
+    padding: 6rem 0rem 0rem 12rem;
+  }
+
+  .MyWork-title {
+    padding: 3rem;
+    background-color: #cfe8ef;
+    color: #000000;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 4rem;
+    width: 25%;
+    height: 100%;
+    display: flex;
+  }
+
+  .MyWork-title p {
+    width: 100%;  
+    height: min-content;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .MyWork-title-img {
+    width: 4rem;
+    /* margin-left: -5rem; */
+    align-self: center;
+  }
+
+  .MyWork-div {
+    display: flex;
+    width: 100vw;
+    height: 83vh;
+    padding: 5rem;
+  }
+
+  .MyWork-text {
+    background-color: #cfe8ef;
+    color: #000000;
+    position: relative;
+    top: 50%;
+    left: 10%;
+    width: 22.5%;
+    height: 47.5%;
+    border-radius: 0.5rem;
+    text-align: left;
+    font-size: 2.5rem;
+    z-index: 2;
+    padding: 1.5rem 3rem;
+    order: 0;
+  }
+
+  .MyWork-text p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .MyWork-links {
+    background-color: #ff8c42;
+    color: #000000;
+    position: relative;
+    top: 20%;
+    left: 25%;
+    width: max-content;
+    height: min-content;
+    border-radius: 0.5rem;
+    text-align: left;
+    font-size: 2.5rem;
+    z-index: 2;
+    padding: 1.5rem 3rem;
+    line-height: 5rem;
+  }
+
+  .MyWork-links a {
+    text-decoration: underline;
+    color: #000000;
+  }
+
+  .Contact {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ff8c42;
+    scroll-snap-align: start;
+  }
+
+  .background-img-Contact {
+    opacity: 0.07;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+  }
+
+  .Contact-title-div {
+    position: relative;
+    width: 100vw;
+    height: 17vh;
+    padding: 6rem 0rem 0rem 12rem;
+  }
+
+  .Contact-title {
+    padding: 3rem;
+    background-color: #5b7c99;
+    color: #ffffff;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 4rem;
+    width: 30%;
+    height: 100%;
+    display: flex;
+  }
+
+  .Contact-title p {
+    width: 100%;  
+    height: min-content;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .Contact-title-img {
+    width: 4rem;
+    /* margin-left: -5rem; */
+    align-self: center;
+  }
+
+  .Contact-text {
+    font-size: 3rem;
+    width: 25%;
+    height: max-content;
+    padding: 1.5rem 3rem;
+    border-radius: 0.5rem;
+    background-color: #5b7c99;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    top: 35%;
+    left: 25%;
+  }
+
+  .Contact-links {
+    width: 25%;
+    height: max-content;
+    border-radius: 1rem;
+    background-color: #cfe8ef;
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    top: 33.5%;
+    left: 47.5%;
+    border: solid 0.25rem #ff8c42;
+  }
+
+  .Contact-links a img {
+    width: 6rem;
+  }
+
+  @media only screen and (max-width: 2750px){
+    html {
+      font-size: 17px;
+    }
+  }
+
+  @media only screen and (max-width: 2500px){
+    html {
+      font-size: 16px;
+    }
+  }
+
+  @media only screen and (max-width: 2250px){
+    html {
+      font-size: 15px;
+    }
+  }
+
+  @media only screen and (max-width: 2000px){
+    html {
+      font-size: 13px;
+    }
+  }
+
+  @media only screen and (max-width: 1750px){
+    html {
+      font-size: 11px;
+    }
+  }
+
+  @media only screen and (max-width: 1500px){
+    html {
+      font-size: 9px;
+    }
+  }
+
+  @media only screen and (max-width: 1250px){
+    html {
+      font-size: 8px;
+    }
+  }
+
+  /* ---------------------------------------------------- */
+
+  @media only screen and (max-width: 650px){
+    html {
+      font-size: 6px;
+    }
+
+    .home-img {
+      width: 35%;
+      top: 5%;
+      left: 0%;
+    }
+
+    .home-img img {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 650px){
+    html {
+      font-size: 7px;
+    }
+    .home-name{
+      font-size: 6rem;
+    }  
+
+    .home-info {
+      width: 40%;
+    }
+
+    .home-img {
+      width: 50%;
+      top: -27.5%;
+      left: 40%;
+    }
+
+    .home-img img {
+      width: 100%;
+    }
+
+    .home-menu-div {
+      width: 90%;
+      margin-top: 3rem;
+      height: 25%;
+    }
+
+    .AboutMe-title {
+      width: 70%;
+    }
+
+    .AboutMe-bio{
+      width: 65%;
+      height: max-content;
+      left: -5%;
+    }
+
+    .AboutMe-loves{
+      width: 45%;
+      height: 25%;
+    }
+
+    .AboutMe-haves {
+      width: 45%;
+      height: 25%;
+    }
+
+    .MyWork-title {
+      width: 70%;
+    }
+
+    .MyWork-text {
+      width: 45%;
+      left: 0%;
+    }
+
+    .MyWork-links {
+      left: 5%;    
+      font-size: 3rem;
+    }
+
+    .Contact-title {
+      width: 70%;
+    }
+
+    .Contact-links {
+      width: 50%;
+      left: 45%;
+      top: 23.5%;
+    }
+    
+    .Contact-text{
+      width: 55%;
+      left: 5%;
+      top: 25%;
+    }
+  }

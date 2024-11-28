@@ -1,0 +1,14 @@
+{% extends 'base/main.html' %}
+
+{% block header %}
+<a style="text-decoration: none;" href="{% url 'tasks' %}">&#8592; Back</a>
+
+{% endblock %}
+
+{% block content %}
+<form style="margin-top: 2rem;" method="post" action="">
+  {% csrf_token %}
+  {{form}}
+  <input class="logout_button" type="submit" value="Submit">
+</form>
+{% endblock content %}

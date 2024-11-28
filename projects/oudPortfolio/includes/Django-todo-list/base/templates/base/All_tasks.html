@@ -1,0 +1,75 @@
+{% extends 'base/main.html' %}
+
+{% block header %}
+
+{% if request.user.is_authenticated%}
+<form class="loginbutton" method="post" action="{% url 'logout' %}">
+  {% csrf_token %}
+  <input class="logout_button" type="submit" value="Logout"> 
+</form>
+<p>Welcome {{request.user}}.</p>
+{% else %}
+<a href="{% url 'login' %}">Login</a>
+{% endif %}
+
+{% endblock %}
+
+{% block content %}
+<div class="todo-list">
+
+  <h2>My To Do List:</h2>
+
+<div id="search-add-wrapper">
+  <form style="display: flex;" method="get">
+    <input type="text" name="search-area" value="{{search_input}}">
+    <input class="logout_button" type="submit" value="Search">
+  </form>
+  <a id="add-link" href="{% url 'task-create' %}">Add task &#x2b;</a>
+</div>
+
+  <div class="add_task">
+  </div>
+
+  <div class="task-item-wrapper">
+    {% for task in tasks %}
+      <div class="task-wrapper">
+        {% if task.complete %}
+          <div class="task-title">
+            <div class="task-complete-icon"></div>
+            <i><s><a class="completed-task" href="{% url 'task-update' task.id %}">{{task}}</a></s></i>
+          </div>
+          <td><a class="x" href="{% url 'task-delete' task.id %}">&#215</a></td>
+        {% else %} 
+        <div class="task-title">
+          <div class="task-incomplete-icon"></div>
+          <a class="incompleted-task" href="{% url 'task-update' task.id %}">{{task}}</a>
+        </div>
+        <td><a class="x" href="{% url 'task-delete' task.id %}">&#215</a></td>
+        {% endif%}
+      </div>
+    {% empty %}
+    <h3>No Items In List</h3>
+    {% endfor %}
+  </div>
+
+
+  <!-- <table>
+    <tr>
+      <th>Item</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    {% for task in tasks %}
+    <tr>
+      <td>{{task.title}}</td>
+      <td><a href="{% url 'task-update' task.id %}">Edit</a></td>
+
+    </tr>
+    {% empty %}
+    <h3>No Items In List</h3>
+    {% endfor %}
+  </table> -->
+
+  {% endblock content %}
+</div>
